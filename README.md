@@ -9,5 +9,5 @@ Animation Bugs:
 2. While removing the cap of the engine, both the cap and the gasket pass through the axis, it looks pretty odd.
 3. There's no animation for putting the cap back on (I know it's not a bug, but is important to note this, since it was a planning error at the moment of making the animations)
 4. When any animation starts, theres an odd jump between the end of the animation and the static frame where the info is shown.
-5. When the first stoke is reproducing, theres an odd jump between the static frame and the moving animation.
+5. When the first stroke is reproducing, theres an odd jump between the static frame and the moving animation.
 6. When the idling animation is being played, sometimes the rotor does a little odd jump in any random frame, this is not as common as you could think.
