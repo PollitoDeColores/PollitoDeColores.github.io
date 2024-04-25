@@ -34,3 +34,6 @@ header {
     gap: 40px;
     margin: 20px 10%;
 }
+.items-container {
+    width: 70%;
+}
