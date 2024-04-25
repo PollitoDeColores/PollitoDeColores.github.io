@@ -69,3 +69,11 @@ function fillCart() {
         totalValue.textContent = Total: $${ totalSum };
     }
 }
+
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove-icon")) {
+        const parentItem = event.target.closest(".item-container");
+        const itemName = parentItem.querySelector("span:first-child").textContent;
+        removeFromCart(itemName);
+    }
+});
