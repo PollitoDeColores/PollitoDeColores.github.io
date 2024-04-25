@@ -15,3 +15,11 @@ shoppingCartIcon.addEventListener("click", function () {
     iconExit.style.display = "block";
     fillCart();
 });
+
+iconExit.addEventListener("click", function () {
+    shoppingCart.style.display = "none";
+    products.style.display = "flex";
+    iconExit.style.display = "none";
+    shoppingCartContainer.style.display = "flex";
+    getProductsNumber();
+});
