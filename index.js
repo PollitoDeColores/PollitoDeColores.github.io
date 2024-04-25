@@ -46,3 +46,26 @@ function removeFromCart(itemName) {
     }
     fillCart();
 }
+
+[...selectedProducts].forEach((product) => {
+    product.addEventListener("click", () => addToCart(product));
+});
+
+function fillCart() {
+    if (cart.length > 0) {
+        const itemsContainer = document.querySelector(".items-container");
+        const totalValue = document.getElementById("total-value");
+        let totalSum = 0;
+        itemsContainer.innerHTML = "";
+        cart.forEach((item) => {
+            const product = `<div class="item-container">    
+                        <span>${item.name}</span>
+                        <span>$${item.price}</span>
+                        <img class="remove-icon" id="remove-icon" src="https://img.icons8.com/material-sharp/48/trash.png"></img>
+                      </div>`;
+            itemsContainer.insertAdjacentHTML("beforeend", product);
+            totalSum += item.price;
+        });
+        totalValue.textContent = Total: $${ totalSum };
+    }
+}
