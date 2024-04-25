@@ -54,3 +54,6 @@ header {
     align-items: start;
     margin-top: 20px;
 }
+span {
+    font-size: 2rem;
+}
