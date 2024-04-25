@@ -23,3 +23,11 @@ iconExit.addEventListener("click", function () {
     shoppingCartContainer.style.display = "flex";
     getProductsNumber();
 });
+
+let cart = [];
+
+function addToCart(product) {
+    const value = product.getAttribute("data-product");
+    cart.push(JSON.parse(value));
+    getProductsNumber();
+}
