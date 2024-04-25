@@ -77,3 +77,7 @@ document.addEventListener("click", (event) => {
         removeFromCart(itemName);
     }
 });
+
+buyButton.addEventListener("click", function () {
+    window.open("https://wa.link/4niq4z");
+});
