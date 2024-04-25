@@ -36,3 +36,13 @@ function getProductsNumber() {
     const productsNumber = document.getElementById("number-of-products");
     productsNumber.textContent = cart.length;
 }
+
+function removeFromCart(itemName) {
+    const index = cart.findIndex(
+        (productInCart) => productInCart.name === itemName
+    );
+    if (index !== -1) {
+        cart.splice(index, 1);
+    }
+    fillCart();
+}
