@@ -64,3 +64,8 @@ button {
     padding: 5px 15px;
     cursor: pointer;
 }
+.icon-shopping-cart-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
