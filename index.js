@@ -31,3 +31,8 @@ function addToCart(product) {
     cart.push(JSON.parse(value));
     getProductsNumber();
 }
+
+function getProductsNumber() {
+    const productsNumber = document.getElementById("number-of-products");
+    productsNumber.textContent = cart.length;
+}
